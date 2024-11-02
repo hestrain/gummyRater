@@ -1,0 +1,64 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+:root{
+  /* CSS HEX */
+--licorice: rgb(35, 35, 43);
+--dark-goldenrod: #BE8D27ff;
+--delft-blue: #223757ff;
+--dark-slate-gray: rgb(46, 88, 92);
+--lighter: rgb(115, 222, 231);
+--cardinal: #C93045ff;
+}
+
+a {
+  color: var(--eerie-black);
+}
+
+body {
+  background-color: var(--licorice);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.head {
+  font-weight: 600;
+  color: aliceblue;
+}
+input {
+  color: black;
+  background-color: rgb(170, 248, 196);
+}
+label {
+  color: white;
+  background-color: rgb(43, 82, 11);
+}
+
+.flipbtn {
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.frontStyle {
+  background: #d7fbda;
+  color: green;
+}
+
+.backStyle {
+  background: #fbd7f8;
+  color: blue;
+}
+
+.flip-card {
+  width: 300px;
+  height: 200px;
+  font-size: 40px;
+  margin: 20px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+}
