@@ -1,12 +1,11 @@
-import { Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import ReactCardFlipCard from 'react-card-flip';
 import FlipCard from "./Flip";
+import DataCards from "../UI/ex/exampleData";
+import AddNew from "./add";
+// import Star from "./Star";
 
 
 export default function Home() {
@@ -14,20 +13,12 @@ export default function Home() {
     <>
 <Container>
   <Col md="3">
-  <Card>
-    <Card.Title>
-
-    Login
-    </Card.Title>
-    <label for="userName">Username</label>
-  <input type="text" id="userName" name="userName"></input>
-    <label for="password">Password</label>
-  <input type="password" id="password" name="password"></input>
-  <button type="submit">Login</button>
-    </Card>
   </Col>
     <FlipCard />
+    {/* <Star /> */}
     <div style={{height:"100px"}}></div>
+<DataCards />
+<AddNew />
 </Container>
     </>
   );
