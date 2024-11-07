@@ -1,4 +1,12 @@
 import React, { useEffect, useState } from "react";
+import UploadAndDisplayImage from "../UI/ex/photo";
+
+
+// to do: 
+// button for add a photo that when clicked gives you a file selector. 
+// then a NEW BUTTON appears for adding an additonal photo 
+//(uyp to 3 photos?????)
+// then just need tog et them saving. 
 
 const AddNew = () => {
     const [userFormData, setUserFormData] = useState({
@@ -15,6 +23,8 @@ const AddNew = () => {
         cbd: "",
         thc: "",
       });
+      
+      
 
       const handleAdd = async (event) => {
         event.preventDefault();
@@ -39,6 +49,7 @@ const AddNew = () => {
 
         
       };
+
       useEffect(() => {
         const addButton = document.getElementById("addBtn");    
     

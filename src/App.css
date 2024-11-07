@@ -95,7 +95,7 @@ label {
 
 .weedcard, .weedcard li {
   color:darkgreen;
-  background-color: chartreuse;
+  background-color: rgb(182, 214, 150);
   list-style:square;
   padding: 5px 10px ;
 
@@ -108,8 +108,11 @@ label {
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  margin: 5px 0px;
 }
-
+.amount {
+  margin: 0px 5px;
+}
 .inputField {
   color: black;
   min-width: 300px;
@@ -128,14 +131,26 @@ textarea{
 
 .ratings {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .rating {
   border: solid green 1px;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 9px;
   margin: 5px;
-  background-color: rgb(103, 196, 103);
-  color: black;
+  width: fit-content;
+}
+
+.leaf, .leaf strong{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.munchie, .munchie strong{
+  background-color: rgb(6, 100, 34);
+  color: rgb(255, 255, 255);
+}
+.horn, .horn strong{
+  background-color: rgb(228, 128, 128);
+  color: rgb(0, 0, 0);
 }

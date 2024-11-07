@@ -23,6 +23,7 @@ const exampleData = [
     weeknight: "no",
     cbd: 0,
     thc: 300,
+    pics:["./images/leaf-white-bg.png",]
   },
   {
    id: 1,

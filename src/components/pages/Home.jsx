@@ -5,6 +5,7 @@ import { Col } from "react-bootstrap";
 import FlipCard from "./Flip";
 import DataCards from "../UI/ex/exampleData";
 import AddNew from "./add";
+import UploadAndDisplayImage from "../UI/ex/photo";
 // import Star from "./Star";
 
 
@@ -19,6 +20,7 @@ export default function Home() {
     <div style={{height:"100px"}}></div>
 <DataCards />
 <AddNew />
+<UploadAndDisplayImage />
 </Container>
     </>
   );
