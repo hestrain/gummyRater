@@ -1,0 +1,435 @@
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #1B2A1B;
+  display: block;
+}
+
+/* ------------navbar ---------------- */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  top:0px;
+  position: relative;
+  height: 60px;
+  background-color: #a1c29f;
+  
+}
+
+.navLayers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navImg{
+  width: 50px;
+}
+
+/* navbar tooltips (hover text for the image icons)*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* -----gummy cards -----------------------*/
+/* div for all gummys to be dispolayed */
+.gummys {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items:center ;
+justify-content: center;}
+
+/* each individual gummy card */
+.gummy{
+margin: 4px;
+padding: 10px;
+border: 10px rgb(65, 173, 65) solid;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 300px;
+max-width: 400px;
+background-color: darkgreen;
+}
+
+.gummyTitle{
+  font-weight: 700;
+  font-size: x-large;
+}
+.gummyBrand {
+  font-weight: 300;
+  font-size: medium;
+  opacity: 70%;
+}
+.gummyRating {
+  font-weight: 800;
+  font-size: large;
+}
+.ratingWord {
+  font-weight: 300;
+  font-size: small;
+  opacity: 70%;
+
+}
+.score {
+  margin: 15px 0px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 15px;
+  width: 70px;
+}
+
+/* more info button that opens the modal */
+.infoButton {
+  background-color: rgb(20, 71, 36);
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px rgb(90, 222, 90) ;
+  border-style: dotted;
+  font-weight: 300;
+}
+.date {
+  opacity: 50%;
+  font-size: small;
+}
+
+/* effects for the button and the whole card */
+.infoButton:hover{
+  background-color: lime;
+  color: black;
+  border-style: solid;
+  font-weight: 700;
+}
+
+.gummy:hover{
+  background-color: lightgreen;
+  color: darkblue;
+  cursor: pointer;
+}
+
+
+
+/* --------gummy modals ----------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 10px rgb(5, 106, 5) solid;
+  border-radius: 15px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* display for the 3 individual ratings */
+.score3 {
+  margin: 15px 5px;
+  padding: 5px;
+  border: 5px solid;
+  border-radius: 15px;
+  width: 33%;
+  background-color: #a1c29f;
+}
+
+/* the whole rating section */
+.ratings{
+  display: flex;
+  flex-direction: row;
+}
+
+/* the amounts, displayed under the title + brand */
+.mg {
+  margin: 0px 5px;
+  font-size: smaller;
+}
+
+/* notes section */
+.notes-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.notes-section h3{
+  text-decoration: underline;
+}
+
+.notes{
+  text-decoration: none;
+}
+
+.felt{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.bolded {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.deleteButton{
+  font-size: x-small;
+  border: 2px rgb(230, 113, 113) ;
+  border-style: dotted;
+  background-color: #1B2A1B;
+}
+
+
+.other-stuff{
+  margin-bottom: 3px;
+}
+/* -----------new gummy form ---------------*/
+/* the whole form */
+.formBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+input {
+  color: rgb(143, 212, 162);
+  margin: 10px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: #5cb85c solid 2px;
+}
+
+/* specific to the horn question */
+select {
+  color: rgb(143, 212, 162);
+  margin: 10px 10px 0px 10px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: #5cb85c solid 2px;
+  font-size: x-large;
+}
+textarea {
+  color: rgb(143, 212, 162);
+  margin: 10px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: #5cb85c solid 2px;
+
+}
+
+label{
+  color: rgb(143, 212, 162);
+}
+/* for top specific labels */
+.label-top{
+  text-align: left;
+margin-left: 10px;
+}
+/* bottom labels */
+.label-bottom{
+  text-align: center;
+  margin-top: 0;
+}
+
+/* the submit button */
+.addBtn{
+  width: 50%;
+  align-self: center;
+}
+
+/* for the 2 final 1uestions */
+.amounts{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+/*  for all number based qs */
+.inputNumber{
+  align-self: center;
+  margin-bottom: 0;
+  font-size: x-large;
+}
+
+/* label stacked with question */
+.labelStack {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* the sections with the 3 ratings */
+.formRatings{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px 2px 35px;
+}
+
+
+/* -------------Landing Page--------- */
+/* -------------& Error Page--------- */
+
+
+
+.tinyIcon{
+  width: 60px;
+  background-color: #a1c29f;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+
+.landingText{
+  font-size: 30px;
+  display: flex;
+  margin: 0px10px;
+}
+
+.landingOptions{
+  display: flex
+  ;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      margin-left: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+/* -------------other--------- */
+.goodRating{
+border-color: #5cb85c;
+}
+.midRating{
+  border-color: orange;
+}
+.badRating{
+  border-color: red;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: rgb(5, 83, 26);
+  -webkit-text-stroke: 2px rgb(28, 189, 36);
+  background-color: #a1c29f;
+  padding: 10px;
+  border: #00ff00 solid 10px;
+  border-radius: 20px;
+  width:max-content;
+}
+
+.center-header{
+  display: flex;
+  justify-content: center;
+}
