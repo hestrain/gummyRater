@@ -1,4 +1,4 @@
-import { deleteGummy } from "../api";
+// import { deleteGummy } from "../api";
 
 export function GummyCard({ gummy }) {
   let date = new Date(gummy.dateCreated);
@@ -18,18 +18,18 @@ export function GummyCard({ gummy }) {
     );
   }
 
-  const gummyDelete = async (id) => {
-    console.log(`deleting ${id}`);
+  // const gummyDelete = async (id) => {
+  //   console.log(`deleting ${id}`);
 
-    if (confirm("Are you sure you want to delete?")) {
-      await deleteGummy(id);
+  //   if (confirm("Are you sure you want to delete?")) {
+  //     await deleteGummy(id);
 
-      console.log(`delete success`);
-      window.location.reload(true);
-    } else {
-      console.log("cancelled delete");
-    }
-  };
+  //     console.log(`delete success`);
+  //     window.location.reload(true);
+  //   } else {
+  //     console.log("cancelled delete");
+  //   }
+  // };
   const showModal = async (id) => {
     console.log(`getting modal for ${id}`);
 
@@ -132,7 +132,7 @@ export function GummyCard({ gummy }) {
             <p className="date">Logged: {stringDate.slice(4, 15)}</p>
             <button
               className="deleteButton"
-              onClick={() => gummyDelete(gummy._id)}
+              // onClick={() => gummyDelete(gummy._id)}
             >
               Delete
             </button>

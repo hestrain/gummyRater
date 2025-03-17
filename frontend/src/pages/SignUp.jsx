@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export function SignUp() {
+export default function SignUp() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -10,7 +10,7 @@ export function SignUp() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "http://localhost:3000/api/auth/register",
         { userName, email, password }
       );
       console.log(response);

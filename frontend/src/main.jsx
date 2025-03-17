@@ -1,15 +1,3 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
-
-
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -19,6 +7,8 @@ import Error from './pages/Error'
 import Landing from './pages/Landing'
 import Home from './pages/Home'
 import NewRating from './pages/NewRating'
+import SignUp from './pages/SignUp'
+import Login from './pages/Login'
 
 
 
@@ -39,7 +29,15 @@ const router = createBrowserRouter([
       {
         path: '/newRating',
         element: <NewRating />
-      }
+      },
+      {
+        path: '/sign-up',
+        element: <SignUp />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
     ]
   }
 ]

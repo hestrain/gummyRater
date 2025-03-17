@@ -4,10 +4,10 @@
 
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![Contributors](https://img.shields.io/github/contributors/hestrain/gummyRater2.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater2/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/hestrain/gummyRater2.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater2/network/members)
-[![Stargazers](https://img.shields.io/github/stars/hestrain/gummyRater2.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater2/stargazers)
-[![Issues](https://img.shields.io/github/issues/hestrain/gummyRater2.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater2/issues)
+[![Contributors](https://img.shields.io/github/contributors/hestrain/gummyRater.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/hestrain/gummyRater.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater/network/members)
+[![Stargazers](https://img.shields.io/github/stars/hestrain/gummyRater.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater/stargazers)
+[![Issues](https://img.shields.io/github/issues/hestrain/gummyRater.svg?style=plastic&logo=appveyor)](https://github.com/hestrain/gummyRater/issues)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 A site to log and rate w33d gummies. Keep track of which ones you vibed with, and which ones knocked you on the ground. Fun!
 
-[Check it Out (coming soon)!](https://gummyRater2.onrender.com/)
+[Check it Out (coming soon)!](https://gummyrating-frontend.onrender.com/)
 
 ## Table of Contents
 - [About the Project](#about-the-project)
@@ -36,7 +36,7 @@ A site to log and rate w33d gummies. Keep track of which ones you vibed with, an
 [<img height="50" width="50" align="center" alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg">](https://nodejs.org/en)
 
 ## Installation
-You do not have to install Gummy Rater to rate gummies, you can visit it live online at [This Link - coming soon](https://gummyRater2.onrender.com/)
+You do not have to install Gummy Rater to rate gummies, you can visit it live online at [This Link - coming soon](https://gummyrating-frontend.onrender.com/)
 
 However, if you'd like to ruin it locally instead, please follow the below instructions: 
 
@@ -56,7 +56,7 @@ Gummy Rater is a user filled database for w33d gummies using restful API.
 GitHub: [HeatherEllen Strain](https://github.com/hestrain)
 
 
-Gummy Rater: [Deployed Website Link - COMING SOON](https://gummyRater2.onrender.com/)
+Gummy Rater: [Deployed Website Link - COMING SOON](https://gummyrating-frontend.onrender.com/)
 
 
 

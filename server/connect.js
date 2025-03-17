@@ -1,26 +1,26 @@
-const { MongoClient, ServerApiVersion } = require("mongodb")
-const { collection } = require("./models/Gummy")
-const { connect } = require("mongoose")
-require("dotenv").config({path:"./config.env"})
-const Db = process.env.ATLAS_URI
+// const { MongoClient, ServerApiVersion } = require("mongodb")
+// const { collection } = require("./models/Gummy")
+// const { connect } = require("mongoose")
+// import 'dotenv/config' 
+// const Db = process.env.DB_URL
 
 
-const client = new MongoClient(Db, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-    }
-})
+// const client = new MongoClient(Db, {
+//     serverApi: {
+//         version: ServerApiVersion.v1,
+//         strict: true,
+//         deprecationErrors: true,
+//     }
+// })
 
-let database
+// let database
 
-module.exports = {
-    connectToServer: () => {
+// module.exports = {
+//     connectToServer: () => {
 
-         database =  client.db("Ratings")
-    },
-    getDb: () => {
-        return database
-    }
-}
+//          database =  client.db("Ratings")
+//     },
+//     getDb: () => {
+//         return database
+//     }
+// }

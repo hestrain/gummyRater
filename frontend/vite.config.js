@@ -7,7 +7,7 @@ export default defineConfig({
 
   // all this added 730pm mar 6
   server: {
-    port: 3000,
+    port: 4000,
     open: true,
     proxy: {
       '/api': {
