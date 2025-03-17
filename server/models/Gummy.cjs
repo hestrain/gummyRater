@@ -23,5 +23,5 @@ const GummySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const UserModel = mongoose.model("Gummys", GummySchema);
-module.exports = UserModel;
+const GummyModel = mongoose.model("Gummys", GummySchema);
+module.exports = GummyModel;
